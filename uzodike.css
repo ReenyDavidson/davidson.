@@ -1,0 +1,27 @@
+body {
+  background-color: floralwhite;
+}
+h1{
+  font-family:monospace;
+  font-size:80px;
+}
+h2 {
+  text-align: center;
+  font-family:monospace;
+  font-size:80px;
+}
+.skillpar {
+  text-align: center;
+  font-family:monospace;
+  font-size:30px;
+}
+.edupar{
+  text-align: center;
+  font-family:monospace;
+  font-size:30px;
+
+}
+.firstpar {
+  font-family:monospace;
+  font-size:30px;
+}
