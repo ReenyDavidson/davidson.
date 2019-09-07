@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+<script>
+function formcheck() {
+var name = document.form1.Name.value;
+var email = document.form1.Email.value;
+var Suggestions = document.form1.Suggestions.value;
+var position1 = email.indexOf("@");
+var position2 = email.lastIndexOf(".");
+
+if (name.length<4) {alert("Please enter a valid name!");
+return false;
+
+} else if (Suggestions.length<20){alert("Message must be at least 20 characters!");
+return false;
+
+} else if(position1<1 || position2<position1+2 || position2+2>=email.length ){alert("Please enter a valid email address!");
+return false;}
+}
+    </script>
+
 </head>
 <body>
 <P>1 ALHAJI MUJIDAT STREET</P>
@@ -25,6 +44,16 @@
 <p><strong>University of Lagos, Lagos.</strong></p>
 <p><i>Economics(Undergraduate)</i></p>
 <p>SEPTEMBER 2016 - DECEMBER 2020, LAG0S</p>
+<div id="div1">
+
+                 <form name="form1" action="#" method="get" onsubmit="return formcheck();"><ul>
+                 <li>Name*: <input type="text" name="Name" placeholder="Enter your name....." required></input></li><br>
+               <li>Email*: <input type="email" name="Email" placeholder="Enter your email....." required></input></li><br>
+             <li>Suggestions*: <textarea type="text" name="Suggestions" rows="7" cols="30" placeholder="Write a message....." required></textarea><br></li>
+             <li><button type="submit">Submit</button></li></ul>
+           </form>
+         </div>
+
 <img src="https://res.cloudinary.com/dg4ugfgto/image/upload/v1566858539/66633850_477362846386780_8623573556292348852_n.jpg_nvjc3t.jpg" alt="me">
 </body>
 </html>
